@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/tama/PlatformConfig.mk
+include device/sony/tama-common/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %h8314,$(TARGET_PRODUCT)))
+ifneq (,$(filter %h8314 aicp_apollo,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := H8314
-else ifneq (,$(filter %h8324,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %h8324 aicp_apollo_dual,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := H8324
 else
 TARGET_BOOTLOADER_BOARD_NAME := H8314

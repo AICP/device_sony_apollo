@@ -115,10 +115,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/1da4000.ufshc/by-name/vendor
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/sony/tama/platform.mk)
+$(call inherit-product, device/sony/tama-common/platform.mk)
 
 # copy NFC firmware
-$(call inherit-product-if-exists, vendor/nxp/nxp-vendor.mk)
+$(call inherit-product-if-exists, vendor/sony/nxp/nxp-vendor.mk)
 
 # include board vendor blobs
 $(call inherit-product-if-exists, vendor/sony/tama-common/tama-partial.mk)
