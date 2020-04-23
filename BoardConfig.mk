@@ -36,3 +36,6 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
 -include vendor/sony/apollo/BoardConfigVendor.mk
+
+# Prebuilt TWRP
+-include device/twrp/apollo/twrp.mk
