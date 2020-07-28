@@ -7,7 +7,7 @@
 # Inherit from tama-common
 -include device/sony/tama-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/xz2c
+DEVICE_PATH := device/sony/apollo
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := H8314,H8324,apollo,apollo_dual,xz2c,xz2c_dual
@@ -35,4 +35,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 BOARD_VNDK_RUNTIME_DISABLE := true
 
 # Inherit from the proprietary version
--include vendor/sony/xz2c/BoardConfigVendor.mk
+-include vendor/sony/apollo/BoardConfigVendor.mk
