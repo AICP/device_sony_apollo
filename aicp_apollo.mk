@@ -7,10 +7,10 @@
 # Inherit from apollo device
 $(call inherit-product, device/sony/apollo/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_apollo
+PRODUCT_NAME := aicp_apollo
 PRODUCT_DEVICE := apollo
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
@@ -24,3 +24,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="H8324-user 10 52.1.A.3.49 052001A003004902006556692 release-keys"
 
 BUILD_FINGERPRINT := Sony/H8324/H8324:10/52.1.A.3.49/052001A003004902006556692:user/release-keys
+
+# AICP Device Maintainer
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="SpiritCroc"
