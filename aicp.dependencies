@@ -1,12 +1,6 @@
 [
   {
     "repository": "AICP/device_sony_tama-common",
-    "target_path": "device/sony/tama-common",
-    "branch": "q10.0"
-  },
-  {
-    "repository":  "AICP/device_twrp",
-    "target_path": "device/twrp/apollo",
-    "branch":      "apollo"
+    "target_path": "device/sony/tama-common"
   }
 ]
