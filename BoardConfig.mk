@@ -33,6 +33,3 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
 -include vendor/sony/apollo/BoardConfigVendor.mk
-
-# Prebuilt TWRP
--include device/twrp/apollo/twrp.mk
